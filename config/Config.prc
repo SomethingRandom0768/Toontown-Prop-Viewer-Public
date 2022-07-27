@@ -10,7 +10,7 @@ screenshot-extension png
 # Window Settings
 win-origin -2 -2
 window-title Toontown Prop Viewer
-win-size 1920 1080
+win-size 640 480
 
 # Model Settings
 default-model-extension .bam
