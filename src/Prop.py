@@ -14,9 +14,11 @@ class Prop(OptionsGUI):
         self.model = loader.loadModel(modelPath)
         self.model.reparentTo(render)
         self.model.setPos(base.camera.getX(), base.camera.getY()+5, base.camera.getZ())
+        self.isGUIHidden = False
         self.generateHPRSlides()
         self.generatePropOptions()
         self.accept('b', self.cleanup)
+        self.accept('space', self.hidePropGUI)
         self.cameraLocked = 0
         self.notify.debug(modelPath + " loaded")
 
@@ -205,12 +207,23 @@ class Prop(OptionsGUI):
 
 # Prop Functions (activated by Options)
 
+    def hidePropGUI(self):
+        if self.isGUIHidden:
+            self.propOptionsFrame.show()
+            self.hprSliderFrame.show()
+            self.isGUIHidden = False
+        else:
+            self.propOptionsFrame.hide()
+            self.hprSliderFrame.hide()
+            self.isGUIHidden = True
+
     def showTextures(self):
         text = ""
+        self.notify.debug("This is the model's textures:\n")
         for texture in self.model.findAllTextures():
             location = str.split( str(texture.get_filename()), os.getcwd() + "/")
             text += location[1] + "\n"
-        self.notify.debug("This is the model's textures:\n" + text)
+        print(location[1])
         # self.notify.debug(text)
         print("\n")
 
