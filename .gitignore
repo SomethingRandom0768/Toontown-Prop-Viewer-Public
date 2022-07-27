@@ -1,2 +1,3 @@
 phase_*
 multifiles/
+__pycache__
