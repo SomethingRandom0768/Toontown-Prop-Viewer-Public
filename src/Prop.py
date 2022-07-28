@@ -220,8 +220,7 @@ class Prop(OptionsGUI):
     def showTextures(self):
         self.notify.debug("This is the model's textures:\n")
         for texture in self.model.findAllTextures():
-            location = str.split( str(texture.get_filename()), os.getcwd() + "/")
-            print(location[1])
+            print( str(texture.get_filename()) )
         print("\n")
 
     def scaleProp(self):
