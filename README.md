@@ -9,7 +9,7 @@ Installation Instructions:
 
 FAQ:
 "What are the empty buttons whenever I generate props in the Prop GUI?" 
-- A good chunk of them are animation files! It's 
+- A good chunk of them are animation files! It's tricky to remove them, so I've let them be for now.
 
 "How do I get Content Pack support?"
 - Make a folder called "multifiles"
