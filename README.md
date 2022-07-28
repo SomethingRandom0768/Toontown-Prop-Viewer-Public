@@ -26,4 +26,4 @@ FAQ:
 1. Reproduction Steps
 2. For good measure, provide the crash log (it should be called output.log)
 
-You can either DM me this infromation at SomethingRandom#0768, or you can create an Issue in the GitHub Issues tab.
+You can either DM me this information at SomethingRandom#0768 on Discord, or you can create an Issue in the GitHub Issues tab.
