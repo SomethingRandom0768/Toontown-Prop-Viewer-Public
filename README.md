@@ -9,11 +9,11 @@ Installation Instructions:
 
 HOTKEYS:
 
-J K L - Used for hiding and showing the menus
-Spacebar - Hides the Prop Menus
-T - Reloads the Texture Pack visually
-Escape - Exits the Program
-B - Deletes the Prop (basically the Delete Prop button but a hotkey)
+- J K L - Used for hiding and showing the menus
+- Spacebar - Hides the Prop Menus
+- T - Reloads the Texture Pack visually
+- Escape - Exits the Program
+- B - Deletes the Prop (basically the Delete Prop button but a hotkey)
 
 
 
