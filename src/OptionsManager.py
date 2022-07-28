@@ -235,6 +235,14 @@ class OptionsManager(OptionsGUI):
     def deleteContentPackFrame(self):
         self.contentPackFrame.destroy()
 
+    def showContentPackFrame(self):
+        '''Shows the content pack frame'''
+        self.contentPackFrame.show()
+    
+    def hideContentPackFrame(self):
+        '''Hides the content pack frame'''
+        self.contentPackFrame.hide()
+
     def deleteOptionsGUI(self):
         self.optionsFrame.destroy()
 
@@ -340,13 +348,15 @@ class OptionsManager(OptionsGUI):
         self.currentChosenPack = index
         self.contentPackButtons[index]['text'] = "Selected"
         self.notify.debug("The current content pack is now " + contentPackPath)
-    
+        self.hideContentPackFrame()
+            
     def removeContentPackPath(self):
         vfs.unmount(Filename( self.loadedPacks[self.currentChosenPack] ) )
         self.updateSetting('content-pack', "None")
         self.writeSettings()
         self.resetButtonTexts()
         self.notify.debug("Content Pack removed")
+        self.showContentPackFrame()
 
     def reloadTextures(self):
         gsg = base.win.gsg
