@@ -1,6 +1,5 @@
 
 from . import Playground
-from src.MusicPlayer import MusicPlayer
 from dna import DNAStorage, DNAParser
 from direct.directnotify import DirectNotifyGlobal
 
@@ -28,7 +27,6 @@ class Kaboomberg(Playground.Playground):
         self.streetGeom = render.attachNewNode(renderbit)
         self.streetGeom.setPos(0, yPosition, 0)
 
-        # testslider = MusicPlayer('phase_14/audio/bgm/ttr_s_ara_dga_kaboomberg.ogg', 'Kaboomberg - Main Theme', (0.5, 0.5, 0.5, 1.0) ) 
         self.notify.debug("Safezone Generated")
 
     def cleanup(self):

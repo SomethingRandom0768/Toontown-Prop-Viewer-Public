@@ -1,7 +1,7 @@
 
 from . import Playground
 from dna import DNAStorage, DNAParser
-from src import MusicPlayer, OptionsGUI
+from src import OptionsGUI
 from direct.directnotify import DirectNotifyGlobal
 
 STREET_NUMBERS = {
@@ -52,7 +52,6 @@ class ToontownCentral(Playground.Playground):
         self.streetGeom = render.attachNewNode(renderbit)
         self.streetGeom.setPos(0, yPosition, 0)
 
-       # testPlayer = MusicPlayer.MusicPlayer('phase_4/audio/bgm/TC_nbrhood.ogg', 'Toontown Central - Playground Theme', (0.992188, 0.480469, 0.167969, 1.0) ) 
 
     def cleanup(self):
         self.streetGeom.removeNode()
