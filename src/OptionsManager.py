@@ -1,6 +1,5 @@
 # SRC imports
 from .OptionsGUI import *
-from .ContentPackManager import *
 
 # Panda3D imports
 from panda3d.core import VirtualFileSystem, Filename, getModelPath, GraphicsStateGuardian, WindowProperties, Multifile
